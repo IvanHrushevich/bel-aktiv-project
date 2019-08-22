@@ -1,1 +1,14 @@
-<p>projects works!</p>
+<ul>
+  <li *ngFor="let project of projects; let i = index">
+    <a (click)="scrollToElement(i)">{{ project.title }}</a>
+  </li>
+</ul>
+
+<section class="card-container">
+  <mat-card *ngFor="let project of projects; let i = index" class="project-card" [id]="'project-' + i">
+    <mat-card-header>
+      <mat-card-title>{{ project.title }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu" />
+  </mat-card>
+</section>
