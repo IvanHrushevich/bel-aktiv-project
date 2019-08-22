@@ -9,6 +9,6 @@
     <mat-card-header>
       <mat-card-title>{{ project.title }}</mat-card-title>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu" />
+    <img mat-card-image [src]="project.imgSrc" [alt]="project.title" />
   </mat-card>
 </section>
