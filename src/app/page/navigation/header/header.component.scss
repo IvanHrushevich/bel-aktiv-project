@@ -1,29 +1,46 @@
+@import '../../../shared/variables';
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem;
   box-shadow: 0 4px 5px -1px rgba(0, 0, 0, 0.3), 0 5px 10px 0 rgba(0, 0, 0, 0.15), 0 1px 18px 0 rgba(0, 0, 0, 0.14);
 }
-.nav-list {
+
+.header__info {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  height: 4.5rem;
+  padding: 1rem 2rem;
+  background-color: $dark;
 }
 
-.nav-list__item {
-  & + & {
-    margin-left: 2rem;
-  }
+.logo {
+  font-size: 2rem;
 }
 
-.nav-list__link,
+.nav {
+  display: flex;
+  justify-content: center;
+  height: 4.5rem;
+  padding: 1.2rem 0;
+  background-color: $primary;
+}
+
+.nav__link {
+  padding: 0 1rem;
+  font-size: 1.6rem;
+}
+
+.nav__link,
 .logo {
   color: #fff;
-  font-size: 1.6rem;
 
   &:hover,
   &:active {
     color: #ccc;
   }
+}
+
+.nav__link_active {
+  color: #ccc;
 }
 
 .logo {

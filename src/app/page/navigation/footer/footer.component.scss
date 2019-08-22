@@ -1,0 +1,13 @@
+@import '../../../shared/variables';
+
+.footer {
+  height: 4.5rem;
+  background-color: $dark;
+  color: $white;
+}
+
+.footer__copyright {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}

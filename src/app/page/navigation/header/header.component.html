@@ -1,17 +1,13 @@
-<mat-toolbar class="header" color="primary">
-  <a href="/" class="logo">БелАктивПроект</a>
-  <ul class="nav-list">
-    <li class="nav-list__item">
-      <a class="nav-list__link" routerLink="/about">О компании</a>
-    </li>
-    <li class="nav-list__item">
-      <a class="nav-list__link" routerLink="/projects">Проекты</a>
-    </li>
-    <li class="nav-list__item">
-      <a class="nav-list__link" routerLink="/licences">Лицензии</a>
-    </li>
-    <li class="nav-list__item">
-      <a class="nav-list__link" routerLink="/contacts">Контакты</a>
-    </li>
-  </ul>
-</mat-toolbar>
+<header class="header">
+  <div class="header__info">
+    <a href="/" class="logo">БелАктивПроект</a>
+    <div class="contacts">Contacts</div>
+  </div>
+
+  <nav class="nav">
+    <a class="nav__link" routerLink="/about" routerLinkActive="nav__link_active">О компании</a>
+    <a class="nav__link" routerLink="/projects" routerLinkActive="nav__link_active">Проекты</a>
+    <a class="nav__link" routerLink="/licences" routerLinkActive="nav__link_active">Лицензии</a>
+    <a class="nav__link" routerLink="/contacts" routerLinkActive="nav__link_active">Контакты</a>
+  </nav>
+</header>
