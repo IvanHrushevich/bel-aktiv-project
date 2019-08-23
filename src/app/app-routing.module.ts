@@ -6,6 +6,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { LicencesComponent } from './licences/licences.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
+import { PromoComponent } from './promo/promo.component';
 
 const routes: Routes = [
   { path: 'not-found', loadChildren: () => import('./not-found/not-found.module').then(mod => mod.NotFoundModule) },
@@ -16,7 +17,8 @@ const routes: Routes = [
       { path: 'about', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'licences', component: LicencesComponent },
-      { path: 'contacts', component: ContactsComponent }
+      { path: 'contacts', component: ContactsComponent },
+      { path: '', component: PromoComponent, pathMatch: 'full' }
     ]
   },
   { path: '**', redirectTo: 'not-found' }

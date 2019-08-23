@@ -13,9 +13,10 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { LicencesComponent } from './licences/licences.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { PromoComponent } from './promo/promo.component';
 
 @NgModule({
-  declarations: [AppComponent, PageComponent, HeaderComponent, FooterComponent, AboutComponent, ProjectsComponent, LicencesComponent, ContactsComponent],
+  declarations: [AppComponent, PageComponent, HeaderComponent, FooterComponent, AboutComponent, ProjectsComponent, LicencesComponent, ContactsComponent, PromoComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
   bootstrap: [AppComponent]
 })
