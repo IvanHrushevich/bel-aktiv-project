@@ -1,12 +1,11 @@
-.section-title {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-}
-
 .about__text {
   & + & {
     margin-top: 1rem;
   }
+}
+
+.partners .container-global {
+  padding: 0;
 }
 
 .partners__block {
