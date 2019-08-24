@@ -1,3 +1,5 @@
+@import '../shared/variables';
+
 .about__text {
   & + & {
     margin-top: 1rem;
@@ -18,7 +20,7 @@
 .partners__item {
   width: 300px;
   height: 160px;
-  background-color: #ccc;
+  background-color: $light-grey;
   background-image: url('../../assets/img/partners-spritesheet.png');
   background-repeat: no-repeat;
 

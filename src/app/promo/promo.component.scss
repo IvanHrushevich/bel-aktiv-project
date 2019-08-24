@@ -24,7 +24,7 @@
 .promo__wrapper {
   margin: auto;
   width: 40rem;
-  color: #fff;
+  color: $white;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,7 +38,7 @@
 }
 
 .promo__text {
-  color: #ccc;
+  color: $light-grey;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
