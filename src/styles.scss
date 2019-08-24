@@ -36,7 +36,7 @@
 .container-global {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 1rem;
 }
 
 @media (max-width: $desktop-width) {
@@ -51,7 +51,7 @@ a {
 
 .button-main {
   background: $bright;
-  border: 2px solid $bright;
+  border: 0.2rem solid $bright;
   color: $white;
   font-size: 1.6rem;
   padding: 1.5rem 2rem;

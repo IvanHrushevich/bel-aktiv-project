@@ -1,12 +1,28 @@
+:host {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .contacts {
   display: flex;
 }
 
 .contacts__contact {
-  font-size: 14px;
-  margin-right: 20px;
+  font-size: 1.4rem;
+  margin-right: 2rem;
 }
 
 .contacts-section {
   margin-bottom: 2rem;
+}
+
+.map {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.map__iframe {
+  flex-grow: 1;
 }
