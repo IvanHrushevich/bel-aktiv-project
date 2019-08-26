@@ -11,12 +11,24 @@ import { HeaderComponent } from './page/navigation/header/header.component';
 import { FooterComponent } from './page/navigation/footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { LicencesComponent } from './licences/licences.component';
+import { LicensesComponent } from './licenses/licenses.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PromoComponent } from './promo/promo.component';
+import { LicenseComponent } from './licenses/license/license.component';
 
 @NgModule({
-  declarations: [AppComponent, PageComponent, HeaderComponent, FooterComponent, AboutComponent, ProjectsComponent, LicencesComponent, ContactsComponent, PromoComponent],
+  declarations: [
+    AppComponent,
+    PageComponent,
+    HeaderComponent,
+    FooterComponent,
+    AboutComponent,
+    ProjectsComponent,
+    LicensesComponent,
+    ContactsComponent,
+    PromoComponent,
+    LicenseComponent
+  ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
   bootstrap: [AppComponent]
 })

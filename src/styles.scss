@@ -2,9 +2,19 @@
 @import './app/shared/variables';
 
 * {
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer,
+.body,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .body,
@@ -26,11 +36,14 @@
   display: none;
 }
 
+.section {
+  padding: 2rem 0;
+}
+
 .title-global {
   font-size: 2.4rem;
   color: $dark;
   margin-bottom: 1rem;
-  margin-top: 2rem;
 }
 
 .container-global {

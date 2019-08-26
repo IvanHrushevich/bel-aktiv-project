@@ -1,0 +1,14 @@
+.licenses-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.license-component {
+  width: 40%;
+  max-width: 40rem;
+  display: block;
+
+  & + & {
+    margin-left: 5rem;
+  }
+}
