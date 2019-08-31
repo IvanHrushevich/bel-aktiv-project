@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 import { License } from './license.model';
 
 @Component({
   selector: 'app-licenses',
   templateUrl: './licenses.component.html',
-  styleUrls: ['./licenses.component.scss']
+  styleUrls: ['./licenses.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LicensesComponent {
   public licenses: License[] = [
