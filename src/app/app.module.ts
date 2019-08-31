@@ -15,6 +15,7 @@ import { LicensesComponent } from './licenses/licenses.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PromoComponent } from './promo/promo.component';
 import { LicenseComponent } from './licenses/license/license.component';
+import { ContactsBlockComponent } from './page/contacts-block/contacts-block.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { LicenseComponent } from './licenses/license/license.component';
     LicensesComponent,
     ContactsComponent,
     PromoComponent,
-    LicenseComponent
+    LicenseComponent,
+    ContactsBlockComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
   bootstrap: [AppComponent]

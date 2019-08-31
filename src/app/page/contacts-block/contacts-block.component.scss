@@ -1,0 +1,19 @@
+@import '../../shared/variables';
+
+.contacts {
+  display: flex;
+}
+
+.contacts__fax {
+  margin-right: 2rem;
+}
+
+.number {
+  display: block;
+  color: $white;
+
+  &:hover,
+  &:active {
+    color: $light-grey;
+  }
+}

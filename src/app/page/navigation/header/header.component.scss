@@ -13,13 +13,20 @@
 .header__info {
   display: flex;
   justify-content: space-between;
-  height: 4.5rem;
+  height: 5.5rem;
   padding: 1rem 2rem;
   background-color: $dark;
 }
 
-.logo {
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__logo-link {
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .nav {
@@ -36,7 +43,7 @@
 }
 
 .nav__link,
-.logo {
+.header__logo-link {
   color: $white;
 
   &:hover,
@@ -47,8 +54,4 @@
 
 .nav__link_active {
   color: $light-grey;
-}
-
-.logo {
-  text-transform: uppercase;
 }
