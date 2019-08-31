@@ -6,18 +6,11 @@
   </ul>
 </div>
 
-<section class="card-container">
-  <div class="container-global">
-    <mat-card
-      color="primary"
-      *ngFor="let project of projects; let i = index"
-      class="project-card"
-      [id]="'project-' + i"
-    >
-      <mat-card-header>
-        <mat-card-title>{{ project.title }}</mat-card-title>
-      </mat-card-header>
-      <img class="project-card__img" mat-card-image [src]="project.imgSrc" [alt]="project.title" />
-    </mat-card>
-  </div>
-</section>
+<div class="container-global">
+  <mat-card color="primary" *ngFor="let project of projects; let i = index" class="project-card" [id]="'project-' + i">
+    <mat-card-header>
+      <mat-card-title>{{ project.title }}</mat-card-title>
+    </mat-card-header>
+    <img class="project-card__img" mat-card-image [src]="project.imgSrc" [alt]="project.title" />
+  </mat-card>
+</div>

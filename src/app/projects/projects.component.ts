@@ -43,7 +43,13 @@ export class ProjectsComponent {
   ];
 
   public scrollToElement(index: string): void {
-    const element = document.querySelector(`#project-${index}`);
-    element.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    const element: HTMLElement = document.querySelector(`#project-${index}`);
+    const yCoordinate: number = element.getBoundingClientRect().top + window.pageYOffset;
+    const headerHeight: number = 110;
+
+    window.scrollTo({
+      top: yCoordinate - headerHeight,
+      behavior: 'smooth'
+    });
   }
 }

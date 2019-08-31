@@ -32,10 +32,10 @@ p {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-// removes scrollbar
-::-webkit-scrollbar {
-  display: none;
-}
+// // removes scrollbar
+// ::-webkit-scrollbar {
+//   display: none;
+// }
 
 .section {
   padding: 2rem 0;
@@ -50,7 +50,7 @@ p {
 .container-global {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 
 @media (max-width: $desktop-width) {
