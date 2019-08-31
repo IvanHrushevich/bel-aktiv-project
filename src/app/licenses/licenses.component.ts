@@ -1,6 +1,8 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 
 import { License } from './license.model';
+import { LicensePopupComponent } from './license-popup/license-popup.component';
 
 @Component({
   selector: 'app-licenses',
@@ -19,4 +21,14 @@ export class LicensesComponent {
       imgSrc: 'assets/img/certificate-2.jpg'
     }
   ];
+
+  constructor(public dialog: MatDialog) {}
+
+  public onLicenseClick(index: number): void {
+    this.dialog.open(LicensePopupComponent, {
+      width: 'auto',
+      height: '90%',
+      data: this.licenses[index]
+    });
+  }
 }

@@ -1,3 +1,8 @@
 <div class="licenses-container container-global">
-  <app-license class="license-component" *ngFor="let license of licenses" [license]="license"></app-license>
+  <app-license
+    class="license-component"
+    *ngFor="let license of licenses; let index = index"
+    [license]="license"
+    (click)="onLicenseClick(index)"
+  ></app-license>
 </div>
