@@ -2,15 +2,24 @@
 
 .contacts {
   display: flex;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
 }
 
 .contacts__fax {
   margin-right: 2rem;
+
+  @media (max-width: 650px) {
+    margin-right: 0;
+  }
 }
 
 .number {
   display: block;
   color: $white;
+  padding: 0.2rem 0;
 
   &:hover,
   &:active {

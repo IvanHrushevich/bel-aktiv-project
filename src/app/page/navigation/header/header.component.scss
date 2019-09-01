@@ -8,12 +8,16 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 650px) {
+    justify-content: center;
+  }
 }
 
 .header__info {
   display: flex;
   justify-content: space-between;
-  height: 5.5rem;
+  height: 6rem;
   padding: 1rem 2rem;
   background-color: $dark;
 }
@@ -29,6 +33,12 @@
   text-transform: uppercase;
 }
 
+.header__contacts {
+  @media (max-width: 650px) {
+    display: none;
+  }
+}
+
 .nav {
   display: flex;
   justify-content: center;
@@ -40,6 +50,10 @@
 .nav__link {
   padding: 0 1rem;
   font-size: 1.6rem;
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 }
 
 .nav__link,

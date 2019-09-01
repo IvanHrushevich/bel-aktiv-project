@@ -1,9 +1,13 @@
 @import '../../../shared/variables';
 
 .footer {
-  height: 8.5rem;
+  min-height: 8.5rem;
   background-color: $dark;
   color: $white;
+
+  @media (max-width: 650px) {
+    text-align: center;
+  }
 }
 
 .footer__copyright {
@@ -16,4 +20,14 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+}
+
+.footer__socials {
+  @media (max-width: 650px) {
+    margin-bottom: 1rem;
+  }
 }
