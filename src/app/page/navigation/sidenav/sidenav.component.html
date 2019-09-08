@@ -1,0 +1,42 @@
+<mat-list role="list">
+  <a
+    class="sidenav-link"
+    routerLink="/about"
+    routerLinkActive="sidenav-link_active"
+    mat-list-item
+    (click)="onLinkClick()"
+  >
+    <mat-icon>home</mat-icon>
+    <span class="nav-caption">О компании</span>
+  </a>
+  <a
+    class="sidenav-link"
+    routerLink="/projects"
+    routerLinkActive="sidenav-link_active"
+    mat-list-item
+    (click)="onLinkClick()"
+  >
+    <mat-icon>work</mat-icon>
+    <span class="nav-caption">Проекты</span>
+  </a>
+  <a
+    class="sidenav-link"
+    routerLink="/licenses"
+    routerLinkActive="sidenav-link_active"
+    mat-list-item
+    (click)="onLinkClick()"
+  >
+    <mat-icon>description</mat-icon>
+    <span class="nav-caption">Лицензии</span>
+  </a>
+  <a
+    class="sidenav-link"
+    routerLink="/contacts"
+    routerLinkActive="sidenav-link_active"
+    mat-list-item
+    (click)="onLinkClick()"
+  >
+    <mat-icon>contacts</mat-icon>
+    <span class="nav-caption">Контакты</span>
+  </a>
+</mat-list>

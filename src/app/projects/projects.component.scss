@@ -3,6 +3,10 @@
 .project-list {
   margin-top: 3rem;
   margin-left: 5rem;
+
+  @media (max-width: $desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .project-list__item {

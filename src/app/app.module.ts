@@ -17,6 +17,8 @@ import { PromoComponent } from './promo/promo.component';
 import { LicenseComponent } from './licenses/license/license.component';
 import { ContactsBlockComponent } from './page/contacts-block/contacts-block.component';
 import { LicensePopupComponent } from './licenses/license-popup/license-popup.component';
+import { SidenavComponent } from './page/navigation/sidenav/sidenav.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,8 @@ import { LicensePopupComponent } from './licenses/license-popup/license-popup.co
     PromoComponent,
     LicenseComponent,
     ContactsBlockComponent,
-    LicensePopupComponent
+    LicensePopupComponent,
+    SidenavComponent
   ],
   entryComponents: [LicensePopupComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],

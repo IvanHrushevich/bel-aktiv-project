@@ -1,0 +1,15 @@
+@import '../../../shared/variables';
+
+.sidenav-link {
+  color: $dark;
+
+  &_active,
+  &:hover,
+  &:active {
+    color: #909090;
+  }
+}
+
+.nav-caption {
+  padding-left: 1rem;
+}

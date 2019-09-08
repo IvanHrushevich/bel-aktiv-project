@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (max-width: 650px) {
+  @media (max-width: $mobile-width) {
     justify-content: center;
   }
 }
@@ -34,7 +34,7 @@
 }
 
 .header__contacts {
-  @media (max-width: 650px) {
+  @media (max-width: $mobile-width) {
     display: none;
   }
 }
@@ -45,15 +45,15 @@
   height: 4.5rem;
   padding: 1.2rem 0;
   background-color: $primary;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .nav__link {
   padding: 0 1rem;
   font-size: 1.6rem;
-
-  @media (max-width: 650px) {
-    display: none;
-  }
 }
 
 .nav__link,
@@ -68,4 +68,12 @@
 
 .nav__link_active {
   color: $light-grey;
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }

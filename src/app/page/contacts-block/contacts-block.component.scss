@@ -3,7 +3,7 @@
 .contacts {
   display: flex;
 
-  @media (max-width: 650px) {
+  @media (max-width: $mobile-width) {
     flex-direction: column;
   }
 }
@@ -11,7 +11,7 @@
 .contacts__fax {
   margin-right: 2rem;
 
-  @media (max-width: 650px) {
+  @media (max-width: $mobile-width) {
     margin-right: 0;
   }
 }
