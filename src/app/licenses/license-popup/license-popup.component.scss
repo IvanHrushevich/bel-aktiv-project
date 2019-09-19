@@ -1,5 +1,14 @@
-.popup-img {
+:host {
   display: block;
   height: 100%;
+}
+
+.popup-img {
+  height: 100%;
   margin: 0 auto;
+
+  @media (max-width: 750px) {
+    height: auto;
+    width: 100%;
+  }
 }

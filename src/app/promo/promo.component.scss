@@ -23,6 +23,9 @@
   @media (max-width: $desktop-small-width) {
     width: 100%;
   }
+  @media (max-width: 500px) {
+    height: 100vh;
+  }
 }
 
 .promo__wrapper {
