@@ -14,12 +14,11 @@ const routes: Routes = [
     path: '',
     component: PageComponent,
     children: [
-      { path: 'wellcome', component: PromoComponent, pathMatch: 'full' },
       { path: 'about', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'licenses', component: LicensesComponent },
       { path: 'contacts', component: ContactsComponent },
-      { path: '', redirectTo: 'wellcome', pathMatch: 'full' },
+      { path: '', component: PromoComponent, pathMatch: 'full' },
       { path: '**', component: NotFoundComponent }
     ]
   }
