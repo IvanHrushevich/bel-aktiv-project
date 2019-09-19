@@ -1,14 +1,16 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, AfterViewInit, OnDestroy } from '@angular/core';
 
 import { Project } from './project.model';
+import { ViewEncapsulation } from '@angular/compiler/src/core';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
+  // encapsulation: ViewEncapsulation.None
 })
-export class ProjectsComponent {
+export class ProjectsComponent implements AfterViewInit, OnDestroy {
   public projects: Project[] = [
     {
       title: 'Реконструкция здания под специализированное на розничной торговле по пер. Корженевского, 20а в г. Минске',
@@ -41,6 +43,16 @@ export class ProjectsComponent {
       imgSrc: 'assets/img/projects/project-7.jpg'
     }
   ];
+
+  ngAfterViewInit(): void {
+    document.querySelector('.body').classList.add('height-auto');
+    document.querySelector('.html').classList.add('height-auto');
+  }
+
+  ngOnDestroy(): void {
+    document.querySelector('.body').classList.remove('height-auto');
+    document.querySelector('.html').classList.remove('height-auto');
+  }
 
   public scrollToElement(index: string): void {
     const element: HTMLElement = document.querySelector(`#project-${index}`);
