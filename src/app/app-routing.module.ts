@@ -7,21 +7,22 @@ import { LicensesComponent } from './licenses/licenses.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { PromoComponent } from './promo/promo.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'not-found', loadChildren: () => import('./not-found/not-found.module').then(mod => mod.NotFoundModule) },
   {
     path: '',
     component: PageComponent,
     children: [
+      { path: 'wellcome', component: PromoComponent, pathMatch: 'full' },
       { path: 'about', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },
       { path: 'licenses', component: LicensesComponent },
       { path: 'contacts', component: ContactsComponent },
-      { path: '', component: PromoComponent, pathMatch: 'full' }
+      { path: '', redirectTo: 'wellcome', pathMatch: 'full' },
+      { path: '**', component: NotFoundComponent }
     ]
-  },
-  { path: '**', redirectTo: 'not-found' }
+  }
 ];
 
 @NgModule({
