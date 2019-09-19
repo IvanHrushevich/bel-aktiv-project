@@ -36,6 +36,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (max-width: 500px) {
+    margin-top: 30%;
+  }
 }
 
 .promo__title {
