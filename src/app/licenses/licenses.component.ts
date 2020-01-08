@@ -13,20 +13,28 @@ import { LicensePopupComponent } from './license-popup/license-popup.component';
 export class LicensesComponent {
   public licenses: License[] = [
     {
+      title: 'Аттестат соответствия 1',
+      imgSrc: 'assets/img/certificates/certificate-1.jpg'
+    },
+    {
+      title: 'Аттестат соответствия 2',
+      imgSrc: 'assets/img/certificates/certificate-2.jpg'
+    },
+    {
       title: 'Свидетельство о государственной регистрации',
-      imgSrc: 'assets/img/certificate-1.jpg'
+      imgSrc: 'assets/img/certificates/certificate-3.jpg'
     },
     {
       title: 'Сертификат соответствия',
-      imgSrc: 'assets/img/certificate-2.jpg'
+      imgSrc: 'assets/img/certificates/certificate-4.jpg'
     },
     {
       title: 'Сертификат качества (eng)',
-      imgSrc: 'assets/img/certificate-3.jpg'
+      imgSrc: 'assets/img/certificates/certificate-5.jpg'
     },
     {
       title: 'Сертификат качества (rus)',
-      imgSrc: 'assets/img/certificate-4.jpg'
+      imgSrc: 'assets/img/certificates/certificate-6.jpg'
     }
   ];
 
