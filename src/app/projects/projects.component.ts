@@ -13,6 +13,32 @@ import { ViewEncapsulation } from '@angular/compiler/src/core';
 export class ProjectsComponent implements AfterViewInit, OnDestroy {
   public projects: Project[] = [
     {
+      title: 'Реконструкция производственных зданий в г. Минске',
+      imgSrc: 'assets/img/projects/project-8.jpg'
+    },
+    {
+      title: 'Многофункциональное здание, расположенное в г. Смолевичи',
+      imgSrc: 'assets/img/projects/project-9.jpg'
+    },
+    {
+      title: `Техническая модернизация изолированных помещений 5, 6 и 7-го этажей многофункционального торгово-бытового
+              комплекса по ул. Нёманская, 24`,
+      imgSrc: 'assets/img/projects/project-10.jpg'
+    },
+    {
+      title:
+        'Модернизация изолированных помещений, расположенных по адресу: г. Минск, ул. Платонова, 20Б-144 и 20Б-145',
+      imgSrc: 'assets/img/projects/project-11.jpg'
+    },
+    {
+      title: 'Строительство магазина в г. Пинск',
+      imgSrc: 'assets/img/projects/project-12.jpg'
+    },
+    {
+      title: 'Автовокзал в г. Архангельск',
+      imgSrc: 'assets/img/projects/project-13.jpg'
+    },
+    {
       title: 'Реконструкция здания под специализированное на розничной торговле по пер. Корженевского, 20а в г. Минске',
       imgSrc: 'assets/img/projects/project-1.jpg'
     },
