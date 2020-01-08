@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { PageComponent } from './page/page.component';
 import { ContactsComponent } from './contacts/contacts.component';
-import { LicensesComponent } from './licenses/licenses.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { PromoComponent } from './promo/promo.component';
@@ -16,7 +15,7 @@ const routes: Routes = [
     children: [
       { path: 'about', component: AboutComponent },
       { path: 'projects', component: ProjectsComponent },
-      { path: 'licenses', component: LicensesComponent },
+      { path: 'licenses', loadChildren: () => import('./licenses/licenses.module').then(m => m.LicensesModule) },
       { path: 'contacts', component: ContactsComponent },
       { path: '', component: PromoComponent, pathMatch: 'full' },
       { path: '**', component: NotFoundComponent }
