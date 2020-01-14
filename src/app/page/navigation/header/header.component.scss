@@ -31,6 +31,12 @@
 .header__logo-link {
   font-size: 2rem;
   text-transform: uppercase;
+  background-color: transparent;
+  height: 4rem;
+  width: 12.8rem;
+  background-image: url(../../../../assets/img/logo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header__contacts {
