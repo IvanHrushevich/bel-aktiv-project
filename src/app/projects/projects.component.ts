@@ -39,6 +39,10 @@ export class ProjectsComponent implements AfterViewInit, OnDestroy {
       imgSrc: 'assets/img/projects/project-13.jpg'
     },
     {
+      title: 'Строительство склада готовой продукции и в/г «Сёмков городок»',
+      imgSrc: 'assets/img/projects/project-14.jpg'
+    },
+    {
       title: 'Реконструкция здания под специализированное на розничной торговле по пер. Корженевского, 20а в г. Минске',
       imgSrc: 'assets/img/projects/project-1.jpg'
     },
