@@ -17,7 +17,7 @@ export class ForCustomersComponent {
 
   constructor(public dialog: MatDialog) {}
 
-  public onLicenseClick(index: number): void {
+  public onLicenseClick(): void {
     this.dialog.open(LicensePopupComponent, {
       width: 'auto',
       height: '95%',
