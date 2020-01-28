@@ -19,6 +19,7 @@ import { ContactsBlockComponent } from './page/contacts-block/contacts-block.com
 import { LicensePopupComponent } from './licenses/license-popup/license-popup.component';
 import { SidenavComponent } from './page/navigation/sidenav/sidenav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ForCustomersComponent } from './for-customers/for-customers.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ContactsBlockComponent,
     LicensePopupComponent,
     SidenavComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    ForCustomersComponent
   ],
   entryComponents: [LicensePopupComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],

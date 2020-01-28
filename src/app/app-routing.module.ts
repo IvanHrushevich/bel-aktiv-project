@@ -8,6 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { PromoComponent } from './promo/promo.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { ForCustomersComponent } from './for-customers/for-customers.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       { path: 'projects', component: ProjectsComponent },
       { path: 'licenses', component: LicensesComponent },
       { path: 'contacts', component: ContactsComponent },
+      { path: 'for-customers', component: ForCustomersComponent },
       { path: '', component: PromoComponent, pathMatch: 'full' },
       { path: '**', component: NotFoundComponent }
     ]

@@ -31,6 +31,16 @@
   </a>
   <a
     class="sidenav-link"
+    routerLink="/for-customers"
+    routerLinkActive="sidenav-link_active"
+    mat-list-item
+    (click)="onLinkClick()"
+  >
+    <mat-icon>emoji_people</mat-icon>
+    <span class="nav-caption">Заказчикам</span>
+  </a>
+  <a
+    class="sidenav-link"
     routerLink="/contacts"
     routerLinkActive="sidenav-link_active"
     mat-list-item
