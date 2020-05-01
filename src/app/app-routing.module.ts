@@ -10,6 +10,7 @@ import { PromoComponent } from './promo/promo.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ForCustomersComponent } from './for-customers/for-customers.component';
 import { FeedbackComponent } from './feedback/index';
+import { InsuranceComponent } from './insurance/index';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
       { path: 'projects', component: ProjectsComponent },
       { path: 'licenses', component: LicensesComponent },
       { path: 'feedback', component: FeedbackComponent },
+      { path: 'insurance', component: InsuranceComponent },
       { path: 'contacts', component: ContactsComponent },
       { path: 'for-customers', component: ForCustomersComponent },
       { path: '', component: PromoComponent, pathMatch: 'full' },

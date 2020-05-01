@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 import { ImagePopupComponent, Image } from '../shared/index';
@@ -6,7 +6,8 @@ import { ImagePopupComponent, Image } from '../shared/index';
 @Component({
   selector: 'app-feedback',
   templateUrl: './feedback.component.html',
-  styleUrls: ['./feedback.component.scss']
+  styleUrls: ['./feedback.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FeedbackComponent {
   public feedback: Image[] = [

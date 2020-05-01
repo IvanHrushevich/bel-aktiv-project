@@ -41,6 +41,16 @@
   </a>
   <a
     class="sidenav-link"
+    routerLink="/insurance"
+    routerLinkActive="sidenav-link_active"
+    mat-list-item
+    (click)="onLinkClick()"
+  >
+    <mat-icon>security</mat-icon>
+    <span class="nav-caption">Страхование</span>
+  </a>
+  <a
+    class="sidenav-link"
     routerLink="/for-customers"
     routerLinkActive="sidenav-link_active"
     mat-list-item

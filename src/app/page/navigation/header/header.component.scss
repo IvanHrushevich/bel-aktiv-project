@@ -52,7 +52,7 @@
   padding: 1.2rem 0;
   background-color: $primary;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: none;
   }
 }
@@ -79,7 +79,7 @@
 .burger {
   display: none;
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: $tablet-width) {
     display: block;
   }
 }
