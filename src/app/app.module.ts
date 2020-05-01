@@ -14,12 +14,11 @@ import { ProjectsComponent } from './projects/projects.component';
 import { LicensesComponent } from './licenses/licenses.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { PromoComponent } from './promo/promo.component';
-import { LicenseComponent } from './licenses/license/license.component';
 import { ContactsBlockComponent } from './page/contacts-block/contacts-block.component';
-import { LicensePopupComponent } from './licenses/license-popup/license-popup.component';
 import { SidenavComponent } from './page/navigation/sidenav/sidenav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ForCustomersComponent } from './for-customers/for-customers.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -32,15 +31,12 @@ import { ForCustomersComponent } from './for-customers/for-customers.component';
     LicensesComponent,
     ContactsComponent,
     PromoComponent,
-    LicenseComponent,
     ContactsBlockComponent,
-    LicensePopupComponent,
     SidenavComponent,
     NotFoundComponent,
     ForCustomersComponent
   ],
-  entryComponents: [LicensePopupComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, SharedModule, MaterialModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

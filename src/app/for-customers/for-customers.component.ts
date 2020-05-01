@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
-
-import { License, LicensePopupComponent } from '../licenses/index';
 import { MatDialog } from '@angular/material/dialog';
+
+import { ImagePopupComponent, Image } from '../shared/index';
 
 @Component({
   selector: 'app-for-customers',
@@ -10,18 +10,18 @@ import { MatDialog } from '@angular/material/dialog';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ForCustomersComponent {
-  license: License = {
+  image: Image = {
     title: 'Eвропейский банк реконструкции и развития',
     imgSrc: 'assets/img/certificates/european-bank.jpg'
   };
 
   constructor(public dialog: MatDialog) {}
 
-  public onLicenseClick(): void {
-    this.dialog.open(LicensePopupComponent, {
+  public onImageClick(): void {
+    this.dialog.open(ImagePopupComponent, {
       width: 'auto',
       height: '95%',
-      data: this.license
+      data: this.image
     });
   }
 }

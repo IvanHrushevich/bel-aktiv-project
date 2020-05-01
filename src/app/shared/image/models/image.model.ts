@@ -1,4 +1,4 @@
-export interface License {
+export interface Image {
   title: string;
   imgSrc: string;
 }

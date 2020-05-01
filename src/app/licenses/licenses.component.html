@@ -1,8 +1,8 @@
 <div class="licenses-container container-global">
-  <app-license
+  <app-image
     class="license-component"
     *ngFor="let license of licenses; let index = index"
-    [license]="license"
+    [image]="license"
     (click)="onLicenseClick(index)"
-  ></app-license>
+  ></app-image>
 </div>

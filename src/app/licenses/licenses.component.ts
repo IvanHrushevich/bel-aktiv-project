@@ -1,8 +1,7 @@
 import { Component, ChangeDetectionStrategy, Inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
-import { License } from './license.model';
-import { LicensePopupComponent } from './license-popup/license-popup.component';
+import { ImagePopupComponent, Image } from '../shared/index';
 
 @Component({
   selector: 'app-licenses',
@@ -11,7 +10,7 @@ import { LicensePopupComponent } from './license-popup/license-popup.component';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LicensesComponent {
-  public licenses: License[] = [
+  public licenses: Image[] = [
     {
       title: 'Аттестат соответствия 1',
       imgSrc: 'assets/img/certificates/certificate-1.jpg'
@@ -41,7 +40,7 @@ export class LicensesComponent {
   constructor(public dialog: MatDialog) {}
 
   public onLicenseClick(index: number): void {
-    this.dialog.open(LicensePopupComponent, {
+    this.dialog.open(ImagePopupComponent, {
       width: 'auto',
       height: '90%',
       data: this.licenses[index]
