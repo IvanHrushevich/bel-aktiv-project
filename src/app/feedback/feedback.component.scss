@@ -1,4 +1,6 @@
-.licenses-container {
+@import '../shared/variables';
+
+.feedback-container {
   display: flex;
   justify-content: flex-start;
   margin-top: 3rem;
@@ -15,6 +17,7 @@
   max-width: 40rem;
   display: block;
   margin: 1.5%;
+  border: 0.2rem solid $light;
 
   @media (max-width: 500px) {
     width: 80%;

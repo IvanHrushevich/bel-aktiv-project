@@ -8,7 +8,6 @@ import { ViewEncapsulation } from '@angular/compiler/src/core';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
-  // encapsulation: ViewEncapsulation.None
 })
 export class ProjectsComponent implements AfterViewInit, OnDestroy {
   public projects: Project[] = [

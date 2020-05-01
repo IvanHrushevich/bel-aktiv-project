@@ -31,6 +31,16 @@
   </a>
   <a
     class="sidenav-link"
+    routerLink="/feedback"
+    routerLinkActive="sidenav-link_active"
+    mat-list-item
+    (click)="onLinkClick()"
+  >
+    <mat-icon>rate_review</mat-icon>
+    <span class="nav-caption">Отзывы</span>
+  </a>
+  <a
+    class="sidenav-link"
     routerLink="/for-customers"
     routerLinkActive="sidenav-link_active"
     mat-list-item

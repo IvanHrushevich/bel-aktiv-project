@@ -1,0 +1,8 @@
+<div class="feedback-container container-global">
+  <app-image
+    class="image-component"
+    *ngFor="let feedbackEl of feedback; let index = index"
+    [image]="feedbackEl"
+    (click)="onFeedbackClick(index)"
+  ></app-image>
+</div>

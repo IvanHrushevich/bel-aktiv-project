@@ -19,6 +19,7 @@ import { SidenavComponent } from './page/navigation/sidenav/sidenav.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ForCustomersComponent } from './for-customers/for-customers.component';
 import { SharedModule } from './shared/shared.module';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SharedModule } from './shared/shared.module';
     ContactsBlockComponent,
     SidenavComponent,
     NotFoundComponent,
-    ForCustomersComponent
+    ForCustomersComponent,
+    FeedbackComponent
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, SharedModule, MaterialModule],
   bootstrap: [AppComponent]
