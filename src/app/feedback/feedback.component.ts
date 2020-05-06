@@ -38,6 +38,10 @@ export class FeedbackComponent {
     {
       title: 'Нюмэтью',
       imgSrc: 'assets/img/feedback/feedback-7.jpg'
+    },
+    {
+      title: 'СТДев',
+      imgSrc: 'assets/img/feedback/feedback-8.jpg'
     }
   ];
 
