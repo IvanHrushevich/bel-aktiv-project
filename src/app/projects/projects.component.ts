@@ -86,11 +86,11 @@ export class ProjectsComponent implements AfterViewInit, OnDestroy {
   public scrollToElement(index: string): void {
     const element: HTMLElement = document.querySelector(`#project-${index}`);
     const yCoordinate: number = element.getBoundingClientRect().top + window.pageYOffset;
-    const headerHeight: number = 110;
+    const headerHeight: number = document.querySelector('.header').clientHeight + 5;
 
     window.scrollTo({
       top: yCoordinate - headerHeight,
-      behavior: 'smooth'
+      behavior: 'auto'
     });
   }
 }
